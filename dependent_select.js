@@ -27,7 +27,7 @@ jQuery(document).ready(function() {
 		var url_mask        = $(this).data('option-url');
 		var key_method      = "id"; //$(this).data('option-key-method');
 		var value_method    = "name"; //$(this).data('option-value-method');
-		var prompt          = $(this).has('option[value=]').size() ? $(this).find('option[value=]') : $('<option>').text('?');
+		var prompt          = $(this).has('option[value]').size() ? $(this).find('option[value]') : $('<option>').text('?');
 		var regexp          = /:[0-9a-zA-Z_]+/g;
 
 		var observer = $('select#'+ observer_dom_id);
